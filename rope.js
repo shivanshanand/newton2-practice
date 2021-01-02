@@ -1,8 +1,8 @@
 class rope {
     constructor(bodyA,pointB){
         var options ={
-            bodyA: b1,
-            pointB: b2,
+            bodyA: bodyA,
+            pointB: pointB,
             stiffness:1,
             angularstiffness:1
         }
