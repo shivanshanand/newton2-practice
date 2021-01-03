@@ -2,7 +2,7 @@ class ball{
     constructor(x,y,radius){
         var op={
             isStatic: false,
-            restitution: 1.1,
+            restitution: 1,
             friction: 0,
             frictionAir:0.0,
             slop:1,
