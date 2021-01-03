@@ -26,26 +26,26 @@ function setup() {
 		World.add(world,mConstraint);
 
 		//Create the Bodies Here.
-		ball1=new ball(660,300,40);
-		ball5=new ball(500,300,40);
+		ball1=new ball(500,300,40);
+		ball2=new ball(540,300,40);
 		ball3=new ball(580,300,40);
 		ball4=new ball(620,300,40);
-		ball2=new ball(540,300,40);
+		ball5=new ball(660,300,40);
 
-		wall1=new wall(580,50,220,20);
+	 //	wall1=new wall(580,50,220,20);
 		
-		rope1=new rope(ball5.body,wall1.body,-80,0)
-		rope2=new rope(ball1.body,wall1.body,80,0)
-		rope3=new rope(ball4.body,wall1.body,40,0)
-		rope4=new rope(ball3.body,wall1.body,0,0)
-		rope5=new rope(ball2.body,wall1.body,-40,0)
+		rope1=new rope(ball1.body,{x:300,y:200})
+		rope2=new rope(ball2.body,{x:340,y:200})
+		rope3=new rope(ball3.body,{x:380,y:200})
+		rope4=new rope(ball4.body,{x:420,y:200})
+		rope5=new rope(ball5.body,{x:460,y:200})
 	}
 
 function draw() {
 	background(bg);
 	Engine.update(engine);
 
-	wall1.show();
+  //wall1.show();
 
 	fill("blue");
 	ball1.display();
