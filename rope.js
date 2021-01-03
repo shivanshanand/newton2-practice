@@ -4,7 +4,8 @@ class rope {
             bodyA: bodyA,
             pointB: pointB,
             stiffness:1,
-            angularstiffness:1
+            angularStiffness:1,
+            length:250
         }
 
         this.pointB=pointB;
@@ -16,15 +17,12 @@ class rope {
     }
 
     display(){
-
-        if(this.sling.bodyA){
-            var pointA=this.sling.bodyA.position;
+            var pointA=this.rope.bodyA.position;
             var pointB=this.pointB;
             push();
             strokeWeight(3,5);
-            stroke('#fff');
+            stroke('red');
             line(pointB.x,pointB.y,pointA.x,pointA.y);
             pop();
-       }  
     }
 }
